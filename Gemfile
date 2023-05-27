@@ -48,6 +48,9 @@ gem "bootsnap", require: false
 # Flexible authentication solution for Rails with Warden.
 gem "devise"
 
+# Minimal authorization through OO design and pure Ruby classes
+gem "pundit"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

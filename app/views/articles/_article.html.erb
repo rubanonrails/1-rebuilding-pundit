@@ -7,8 +7,10 @@
     </div>
   </div>
 
-  <%= button_to "Delete",
-                article_path(article),
-                method: :delete,
-                class: "btn btn-danger btn-sm" %>
+  <% if policy(article).destroy? %>
+    <%= button_to "Delete",
+                  article_path(article),
+                  method: :delete,
+                  class: "btn btn-danger btn-sm" %>
+  <% end %>
 </article>

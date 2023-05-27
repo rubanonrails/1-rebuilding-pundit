@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: %i[show destroy]
 
   def index
-    @articles = Article.all
+    @articles = policy_scope(Article)
   end
 
   def show
@@ -18,5 +18,7 @@ class ArticlesController < ApplicationController
 
   def set_article
     @article = Article.find(params[:id])
+
+    authorize @article
   end
 end
