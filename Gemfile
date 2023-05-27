@@ -49,7 +49,7 @@ gem "bootsnap", require: false
 gem "devise"
 
 # Minimal authorization through OO design and pure Ruby classes
-gem "pundit"
+# gem "pundit"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
