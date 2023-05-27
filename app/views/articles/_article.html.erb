@@ -1,0 +1,14 @@
+<article class="border rounded p-3 mb-3 d-flex justify-content-between position-relative">
+  <div>
+    <%= link_to article.title, article %>
+
+    <div class="badge rounded-pill text-bg-<%= article.draft? ? 'warning' : 'success' %>">
+      <%= article.status %>
+    </div>
+  </div>
+
+  <%= button_to "Delete",
+                article_path(article),
+                method: :delete,
+                class: "btn btn-danger btn-sm" %>
+</article>

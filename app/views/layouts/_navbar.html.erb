@@ -1,0 +1,13 @@
+<nav class="navbar bg-light mb-3">
+  <div class="container-fluid">
+    <div class="navbar-brand">
+      Rebuilding Pundit
+    </div>
+
+    <% if user_signed_in? %>
+      <div class="navbar-nav ms-auto">
+        Logged in as: <%= current_user.role %>
+      </div>
+    <% end %>
+  </div>
+</nav>

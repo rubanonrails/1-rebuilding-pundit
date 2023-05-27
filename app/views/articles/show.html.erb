@@ -1,0 +1,10 @@
+<div class="container">
+  <%= link_to "&larr; Back to articles".html_safe, articles_path %>
+
+  <h1 class="my-4">
+    <%= @article.title %>
+  </h1>
+
+  <p>Status of the article: <%= @article.status %></p>
+  <p>The content of the article would go there.</p>
+</div>
